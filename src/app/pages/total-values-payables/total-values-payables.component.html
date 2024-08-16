@@ -1,0 +1,18 @@
+<mat-card>
+    <h6 class="title-form">Totais recebíveis</h6>
+
+    <mat-list>
+        <mat-list-item>
+            <span matListItemTitle>Total recebíveis débito</span>
+            <span matListItemLine>{{ readTotalValuesPayablesDto.totalValuePaid | currency: 'BRL'}}</span>
+        </mat-list-item>
+        <mat-list-item>
+            <span matListItemTitle>Total recebíveis crédito</span>
+            <span matListItemLine>{{ readTotalValuesPayablesDto.totalValueWaitingFunds | currency: 'BRL'}}</span>
+        </mat-list-item>
+    </mat-list>
+
+    <div class="btn_box">
+        <button mat-raised-button (click)="backHome()">Voltar</button>
+    </div>
+</mat-card>

@@ -1,27 +1,40 @@
-# PaymentServiceProviderFrontend
+### Objetivos <h3>
+Esse projeto tem o objetivo principal de servir como portfólio para demonstrar o uso do framework Angular 18, seus pacotes e linguagens.<p>
+Também tem o intuito de estudo, desenvolvimento profissional e registro de minha envolução utilizando essas tecnologias. <p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+### Descrição do projeto <h3>
+Esse é o front-end do desafio da Pagar.me, que tem o propósito de ser um serviço de pagamento (Payment Service Provider). A descrição na íntegra pode ser encontrada <a href="https://github.com/pagarme/vagas/blob/master/desafios/software-engineer-backend/README.md">aqui</a>. <p>
+O back-end da aplicação foi desenvolvido em C# ASP.NET Core por mim e pode ser encontrado <a href="https://github.com/douglaskamanski/payment-service-provider">aqui</a>.
+<br>
+A aplicação possuí as seguintes funções: <p>
+* Efetuar pagamento;
+* Exibir transações cadastradas;
+* Exibir recebíveis débito;
+* Exibir recebíveis crédito;
+* Exibir totais recebíveis.
 
-## Development server
+### Tecnologias utilizadas <h3>
+* Angular 18;
+* TypeScript;
+* HTML;
+* CSS.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Ferramentas para desenvolvimento <h3>
+* Visual Studio Code;
+* Node.js;
+* Mozilla Firefox.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Como executar o projeto no Visual Studio Code <h3>
+* Baixar o projeto no seu computador e abri-lo no VS Code;
+* Rodar o projeto com o comando no terminal `ng serve` e abrir a página http://localhost:4200/;
+* Certificar-se que o back-end esteja em execução. Mais informações <a href="https://github.com/douglaskamanski/payment-service-provider">aqui</a>.
+<br>
+<h1 align="center">
+  <img alt="Payment Service Provider - Efetuar pagamento" src=".github/psp1.png" width="80%">
+  <br>
+  <img alt="Payment Service Provider - Transações cadastradas" src=".github/psp2.png" width="80%">
+  <br>
+  <img alt="Payment Service Provider - Recebíveis crédito" src=".github/psp3.png" width="80%">
+  <br>
+  <img alt="Payment Service Provider - Totais recebíveis" src=".github/psp4.png" width="80%">
+</h1>

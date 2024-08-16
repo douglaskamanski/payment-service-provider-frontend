@@ -1,0 +1,19 @@
+<mat-card>
+    <h6 class="title-form">Payment Service Provider</h6>
+
+    <div>
+        <button mat-button [routerLink]="['/create-payment']">Efetuar pagamento</button>
+    </div>
+    <div>
+        <button mat-button [routerLink]="['/list-transaction']">Exibir transações cadastradas</button>
+    </div>
+    <div>
+        <button mat-button [routerLink]="['/list-paid-payables']">Exibir recebíveis débito</button>
+    </div>
+    <div>
+        <button mat-button [routerLink]="['/list-waiting-funds-payables']">Exibir recebíveis crédito</button>
+    </div>
+    <div>
+        <button mat-button [routerLink]="['/total-values-payables']">Exibir totais recebíveis</button>
+    </div>
+</mat-card>

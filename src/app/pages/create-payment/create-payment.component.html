@@ -1,0 +1,67 @@
+<mat-card>
+    <h6 class="title-form">Efetuar pagamento</h6>
+
+    <form [formGroup]="paymentForm" (ngSubmit)="submit()" #formDir="ngForm">
+
+        <div class="input_box">
+            <mat-form-field>
+                <mat-label>Valor transação</mat-label>
+                <input matInput type="text" formControlName="value"
+                    [currencyMask]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" autofocus>
+            </mat-form-field>
+        </div>
+
+        <div class="input_box">
+            <mat-form-field>
+                <mat-label>Descrição</mat-label>
+                <input matInput type="text" formControlName="description" minlength="4" maxlength="100">
+            </mat-form-field>
+        </div>
+
+        <div class="input_box">
+            <mat-card-content>
+                <mat-label>Método de pagamento:</mat-label>
+                <mat-radio-group formControlName="paymentMethod">
+                    <mat-radio-button value="0">Débito</mat-radio-button>
+                    <mat-radio-button value="1">Crédito</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </div>
+
+        <div class="input_box">
+            <mat-form-field>
+                <mat-label>Número cartão</mat-label>
+                <input matInput type="text" formControlName="cardNumbers" inputmode="numeric"
+                    mask="0000 0000 0000 0000">
+            </mat-form-field>
+        </div>
+
+        <div class="input_box">
+            <mat-form-field>
+                <mat-label>Nome do cartão</mat-label>
+                <input matInput type="text" formControlName="cardName" minlength="2" maxlength="20">
+            </mat-form-field>
+        </div>
+
+        <div class="input_box">
+            <mat-form-field>
+                <mat-label>Data de validade do cartão</mat-label>
+                <input matInput type="text" formControlName="cardExpirationDate" placeholder="MM/AAAA"
+                    inputmode="numeric" mask="00/0000">
+            </mat-form-field>
+        </div>
+
+        <div class="input_box">
+            <mat-form-field>
+                <mat-label>CVV do cartão</mat-label>
+                <input matInput type="text" formControlName="cardCvv" inputmode="numeric" mask="9000">
+            </mat-form-field>
+        </div>
+
+        <div class="btn_box">
+            <button mat-flat-button type="submit" [disabled]="!paymentForm.valid">Cadastrar</button>
+            <button mat-raised-button (click)="backHome()">Voltar</button>
+        </div>
+
+    </form>
+</mat-card>
