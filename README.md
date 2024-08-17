@@ -1,6 +1,6 @@
 ### Objetivos <h3>
 Esse projeto tem o objetivo principal de servir como portfólio para demonstrar o uso do framework Angular 18, seus pacotes e linguagens.<p>
-Também tem o intuito de estudo, desenvolvimento profissional e registro de minha envolução utilizando essas tecnologias. <p>
+Também tem o intuito de estudo, desenvolvimento profissional e registro de minha evolução utilizando essas tecnologias. <p>
 
 ### Descrição do projeto <h3>
 Esse é o front-end do desafio da Pagar.me, que tem o propósito de ser um serviço de pagamento (Payment Service Provider). A descrição na íntegra pode ser encontrada <a href="https://github.com/pagarme/vagas/blob/master/desafios/software-engineer-backend/README.md">aqui</a>. <p>
